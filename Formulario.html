@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action="controlador">
+    <div>
+      <label for="ed">Edad</label>
+      <input type="number" step="1" min="1" max="17" value="1" name="edad" id="ed" disabled>
+    </div>
+
+    <div>
+      <label for="nom">Nombre</label>
+      <input type="text" name="nombre" required placeholder="Nombre" id="nom" autofocus autocomplete="off">
+    </div>
+
+    <div>
+      <label for="color">Seleccione un color</label>
+      <input type="color" id="color" name="color">
+    </div>
+
+    <div>
+      <label for="email">Ingrese su correo</label>
+      <input type="text" name="correo" id="email" required pattern="+@+.com">
+    </div>
+    <div>
+      <label for="telf">Ingrese su teléfono</label>
+      <input type="text" name="teléfono" id="telf" required pattern="[0-9]{0,10}">
+    </div>
+    <input type="submit"><br>
+    
+    <input type="radio" name="op">
+    <label>opcion1</label> <br>
+    <input type="radio" name="op">
+    <label>opcion2</label> <br>
+
+    <input type="range" step="5" min="0" max="20"> <br>
+
+    <input type="reset" value="Reset">
+    <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>
