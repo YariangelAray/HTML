@@ -24,10 +24,10 @@
   </main>
 
   <div>
-  <form action="controlador">
+  <form action="controlador" method="post" enctype="multipart/form-data">
     <div>
       <label for="ed">Edad</label>
-      <input type="number" step="1" min="1" max="17" value="1" name="edad" id="ed">
+      <input type="number" step="1" min="1" max="18" value="17" name="edad" id="ed">
     </div>
 
     <div>
@@ -59,15 +59,43 @@
       </select>
     </div>
     <br>
-    <input type="radio" name="op">
-    <label>opcion1</label> <br>
-    <input type="radio" name="op">
-    <label>opcion2</label> <br>
+    <div>
+      <label>Ingrese su genero: </label><br>
+      <label for="opcion1">
+        <input type="radio" name="genero" id="opcion1" checked value="fem"> Femenino
+      </label> <br>
+      <label for="opcion2">
+        <input type="radio" name="genero" id="opcion2" value="mas"> Masculino
+      </label> <br>
+    </div>
 
-    <input type="range" step="5" min="0" max="20"> <br>
+    <div>
+      <label>Habilidades: </label> <br>
 
+      <label for="html">
+        <input type="checkbox" name="habilidad" id="html" value="html" checked> HTML
+      </label><br>
+      <label for="git">
+        <input type="checkbox" name="habilidad" id="git" value="git" checked> GIT
+      </label><br>
+      <label for="py">
+        <input type="checkbox" name="habilidad" id="py" value="py" checked> Python
+      </label><br>
+      <label for="cli">
+        <input type="checkbox" name="habilidad" id="cli" value="cli"> CLI
+      </label><br>
+      <label for="js">
+        <input type="checkbox" name="habilidad" id="js" value="js"> JavaScript
+      </label><br>
+    </div>
+
+    <div>
+      <input type="file" accept="image/*" multiple value="image">
+    </div>
+    <br>
     <input type="reset" value="Reset">
     <button type="submit">Guardar</button>
+
   </form>
   </div>
 </body>
