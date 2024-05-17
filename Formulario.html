@@ -20,9 +20,6 @@
   <main>
     <section>
       <h1>Esta es la página de Formulario</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore animi, atque explicabo similique quas sunt repudiandae impedit autem unde qui! Quaerat laudantium est autem? Possimus nemo corrupti impedit sed.
-      </p>
     </section>
   </main>
 
@@ -46,13 +43,22 @@
     <div>
       <label for="email">Ingrese su correo</label>
       <input type="text" name="correo" id="email" required pattern="^[a-zA-Z0-9\.-_+]+@[a-zA-Z0-9\.-_]+(?:\.[a-zA-Z0-9]+)*$">
+
     </div>
     <div>
       <label for="telf">Ingrese su teléfono</label>
       <input type="text" name="teléfono" id="telf" required pattern="[0-9]{0,10}">
     </div>
-    <input type="submit"><br>
     
+    <div>
+      <label for="ciudad">Seleccione su ciudad</label>
+      <select name="ciudad" id="ciudad" >
+        <option value="1">Girón</option>
+        <option value="2" selected>Bucaramanga</option>
+        <option value="3">Florida</option>
+      </select>
+    </div>
+    <br>
     <input type="radio" name="op">
     <label>opcion1</label> <br>
     <input type="radio" name="op">
