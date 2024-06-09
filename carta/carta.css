@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,28 +7,39 @@
 }
 
 body{
-    background-color:floralwhite;
-    padding: 0 20%;
+    background-color:aliceblue;
     font-size: 16px;
     font-family: "Nunito", sans-serif;
     font-style: italic;
 }
 
+.cuerpo{
+    padding: 0 25%;
+}
+
 header{
-    color: goldenrod;
+    color: navy;
 }
 
 h1{
     text-align: center;
-    margin: 20px 0px;
-    font-size: 32px;
+    margin: 30px 0px 30px;
+    font-size: 36px;
+    font-style: normal;
+    font-family: "Zilla Slab", serif;
+    font-weight: 600;
+
 }
 
 h2{
-    margin: 10px 0px;
+    margin: 15px 0px;
     font-size: 24px;
 }
 
+hr{
+    border: 1px solid darkblue;
+    margin-bottom:30px;
+}
 .info{
     margin-left: 10px;
 }
@@ -41,18 +52,34 @@ h2{
 p{
     text-align: justify;
     line-height: 1.5;
-    margin: 15px 0px;
+    margin: 18px 0px;
 }
 
 img{
+    margin-top: 40px;
     height: 60px;
     width: 150px;
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid navy;
 }
 
 .firma{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    color: navy;
+    margin-bottom:   15%;  
+}
+
+a{
+    width: fit-content;
     display: block;
-    float: right;
-    margin-right: 20px;
-    color: goldenrod;    
+    font-weight: bold;
+    color: navy;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+    background-color:cadetblue;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 50px auto;
 }
